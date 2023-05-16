@@ -105,7 +105,7 @@ html, body {
 }
 
 /* Texto do menu 1 e 2 */
-.menu_1 > div >  li > a, .menu_2 > div > li > a {
+.menu_1 > div >  li > a, .menu_2 > li > a {
   text-decoration: none;
   font-family:'brantford-light';
   font-weight: 100;
@@ -161,16 +161,6 @@ html, body {
   
 }
 
-/* Direita do menu 2 */
-.menu_2_right {
-  display: flex;
-  width: 88%;
-  height: 75%;
-  justify-content:space-between;
-  align-items: center;
-  font-size: 20px;
-  /* border: solid 1px white; */
-}
 
 /* Estilo exclusivo (esquerda menu 2) */
 #duas_cores {
@@ -251,7 +241,7 @@ html, body {
   font-family: 'brantford-normal';
   align-items: flex-end;
   -webkit-background-clip: text;
-  background-clip: black;
+  background-clip: rgb(0, 0, 0);
   -webkit-text-fill-color: transparent; 
   /* border:2px solid rgb(18, 228, 98); */
 }

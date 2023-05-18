@@ -1,0 +1,167 @@
+@font-face {
+    font-family:'brantford-light';
+    src: url('/Fonts/brantford/OTP/FoxType\ -\ BrantFord\ Typeface\ Light.otf') format('opentype');
+    font-weight:100;
+  }
+  @font-face {
+    font-family:'brantford-normal';
+    src: url('/Fonts/brantford/OTP/FoxType\ -\ BrantFord\ Typeface\ Regular.otf') format('opentype');
+    font-weight:normal;  
+  }
+  @font-face {
+    font-family:'brantford-semibold';
+    src: url('/Fonts/brantford/OTP/FoxType\ -\ BrantFord\ Typeface\ SemiBold.otf') format('opentype');
+    font-weight:bolder;
+  }
+  @font-face {
+    font-family:'brantford-bold';
+    src: url('/Fonts/brantford/OTP/FoxType\ -\ BrantFord\ Typeface\ Bold.otf') format('opentype');
+    font-weight:bold;  
+  }
+  
+
+
+/*Inicio */
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'brantford-normal';
+    scroll-behavior: smooth;
+    
+}
+html, body {
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-self: center; /* estava desabilitado */
+  flex-wrap:wrap;
+  color: #a5a0a0;
+  background-color: #000000;
+  /* background: rgb(235, 211, 211); */
+  
+}
+
+
+/*        Menu Superior            */
+.container_header {
+    display: flex;
+    /* width:auto; */
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    flex-wrap:wrap;
+    /* border:solid 1px rgb(199, 199, 135); */
+  }
+  
+  /*    Apenas o logo */
+  #logo_1 {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    /* border: solid 1px rgb(255, 34, 0); */
+  }
+  
+  /*   Logo + menu  */
+  .container_menu{
+    
+    display:flex;
+    /* background-color: rgb(39, 175, 229); */
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+    /* border: 1px solid rgb(233, 20, 20); */
+  }
+  
+  /* Apenas o Menu */
+  .menu {
+    display: flex;
+    width: 100%;
+    font-weight: 100;
+    justify-content:space-between;
+    list-style: none;
+    font-size: 17px;
+    word-spacing: 1px;
+    
+    /* border: 1px solid  #28afe4; */
+  }
+  
+  /* Menu da Esqueda */
+  .menu_left {
+   display: flex;
+   width: 70%;
+   justify-content: space-evenly;
+   align-items: center;
+   /* border: 1px solid rgb(3, 229, 254); */
+  }
+  
+  /* Menu da Direita */
+  .menu_right {
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid rgb(219, 22, 177); */
+  }
+  
+  /* Texto do menu  */
+  .menu > div >  li > a {
+    text-decoration: none;
+    font-family:'brantford-light';
+    font-weight: 100;
+    color: #bebebeef;
+  }
+  
+  /* Cor individual de "CRIAR CONTA" */
+  #cor-individual {
+    color:rgba(255, 255, 255, 0.87);
+  }
+
+
+
+  /* Inico de menu 2 */
+
+/* Menu 2 + logo 2 */
+.container_menu_2 {
+    display: flex;
+    width: 90%;
+    height: 75px;
+    align-items: center;
+    position:relative;
+    z-index: 2;
+    /* border: 1px solid rgb(37, 237, 37); */
+  }
+  
+  /* Container do Logo 2 */
+  #container_logo_2 {
+    display:flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    /* border:solid 1px rgb(235, 17, 126); */
+  } 
+  
+  /* Apenas o logo 2 */
+  #container_logo_2 > img {
+    display: flex;
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+    /* border: solid 1px rgb(4, 119, 243); */
+  }
+  
+  /* Fim do menu  */
+
+
+/* Inicio da tabela de check-in */
+
+  .check-in-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 470px;
+    border: 1px solid white;
+  }
+

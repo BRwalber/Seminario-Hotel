@@ -56,15 +56,8 @@ html, body {
     /* border:solid 1px rgb(199, 199, 135); */
   }
   
-  /*    Apenas o logo */
-  #logo_1 {
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
-    /* border: solid 1px rgb(255, 34, 0); */
-  }
   
-  /*   Logo + menu  */
+  /*   menu 1  */
   .container_menu{
     
     display:flex;

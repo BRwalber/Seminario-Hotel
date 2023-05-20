@@ -51,16 +51,9 @@ html, body {
   justify-content: center;
   height: 160px;
   flex-wrap:wrap;
-  border:solid 1px rgb(199, 199, 135);
+  /* border:solid 1px rgb(199, 199, 135); */
 }
 
-/*    Apenas o logo */
-#logo_1 {
-  cursor: pointer;
-  width: 48px;
-  height: 48px;
-  /* border: solid 1px rgb(255, 34, 0); */
-}
 
 /*   Logo + menu  */
 .container_menu_1{
@@ -69,10 +62,10 @@ html, body {
   width: 90%;
   height: 50px;
   margin: 10px 20px;
-  border: 1px solid rgb(233, 20, 20);
+  /* border: 1px solid rgb(233, 20, 20); */
 }
 
-/* Apenas o Menu */
+/* Apenas o Menu superior */
 .menu_1 {
   display: flex;
   width: 100%;
@@ -166,7 +159,7 @@ html, body {
 
 /* Estilo exclusivo (esquerda menu 2) */
 #duas_cores {
-  background:linear-gradient(to left, #48cdc4, #73f28a);;
+  background:linear-gradient(to left,  #CD9900, #D5B038);;
   border-radius: 7px; 
   font-size: 21px;
   color: #000000;
@@ -234,7 +227,7 @@ html, body {
 }
 .container_carousel_text > div > h1 {
   display: flex;
-  background:linear-gradient(to left, #48cdc4, #73f28a);
+  background:linear-gradient(to left, #CD9900, #D5B038);
   width: 100%;
   height: 33%;
   font-size: 155px;
@@ -242,7 +235,7 @@ html, body {
   align-items: flex-end;
   -webkit-background-clip: text;
   background-clip: rgb(0, 0, 0);
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   /* border:2px solid rgb(18, 228, 98); */
 }
 #text_3 > h2 {

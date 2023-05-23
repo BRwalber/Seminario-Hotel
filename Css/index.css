@@ -39,6 +39,10 @@ html, body {
   flex-wrap:wrap;
   color: #a5a0a0;
   background-color: #000000;
+  background-image: url(/Images/Background/right.jpg);
+  background-size: 15%;
+  background-repeat: repeat-y;
+  background-position: right;
   /* background: rgb(235, 211, 211); */
   
 }
@@ -159,7 +163,7 @@ html, body {
 
 /* Estilo exclusivo (esquerda menu 2) */
 #duas_cores {
-  background:linear-gradient(to left,  #CD9900, #D5B038);;
+  background:linear-gradient(to left,  #e9b928, #D5B038);;
   border-radius: 7px; 
   font-size: 21px;
   color: #000000;
@@ -227,7 +231,7 @@ html, body {
 }
 .container_carousel_text > div > h1 {
   display: flex;
-  background:linear-gradient(to left, #CD9900, #D5B038);
+  background:linear-gradient(to left, #e9b928, #D5B038);
   width: 100%;
   height: 33%;
   font-size: 155px;
@@ -294,6 +298,15 @@ html, body {
 
 .mySlides img {
   width: 800px;
+  /* height: auto; */
+}
+
+#gif {
+  width: 400px;
+  height: auto;
+  margin-left: 300px;
+  margin-bottom: 150px;
+
 }
 
 /* Botões de navedação do carrossel */
@@ -437,32 +450,37 @@ html, body {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   height: 250px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background-color: #1a1a1a;
-  /* border: 1px solid white; */
+  background-color: #00000009;
+  backdrop-filter: blur(2px);
+  border-top: 1px solid #D5B038;
 }
 .footer_logo {
   display: flex;
   width: 90%;
-  height: 33%;
+  height: 25%;
   justify-content: center;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 .footer_logo > img {
-  width: 48px;
-  height: 48px;
+  width: 125px;
+  height: 125px;
 }
 .social_media {
   display:flex;
   width: 40%;
-  height: 33%;
+  height: 75%;
   justify-content: space-evenly;
+  align-items: center;
   /* border: 1px solid rgb(0, 255, 119); */
 }
-.social_media > img {
-  width: 48px;
-  height: 48px;
+.social_media > ul > li,.social_media >ul > li > a {
+  list-style: none;
+  text-decoration: none;
+  color: #D5B038;
+  font-family:'brantford-light';
+  font-weight: 700;
 }

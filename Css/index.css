@@ -37,7 +37,7 @@ html, body {
   justify-content: center;
   align-self: center; /* estava desabilitado */
   flex-wrap:wrap;
-  color: #a5a0a0;
+  color: #D5B038;
   background-color: #000000;
   background-image: url(/Images/Background/right.jpg);
   background-size: 15%;
@@ -62,7 +62,6 @@ html, body {
 /*   Logo + menu  */
 .container_menu_1{
   
-  display:flex;
   width: 90%;
   height: 50px;
   margin: 10px 20px;
@@ -105,13 +104,9 @@ html, body {
   text-decoration: none;
   font-family:'brantford-light';
   font-weight: 100;
-  color: #bebebeef;
+  color: #D5B038;
 }
 
-/* Cor individual de "CRIAR CONTA" */
-#cor-individual {
-  color:rgba(255, 255, 255, 0.87);
-}
 
 /* Fim do menu 1 */
 
@@ -123,7 +118,7 @@ html, body {
   width: 90%;
   height: 75px;
   margin: 10px 20px;
-  position:relative;
+  /* position:relative; */
   z-index: 2;
   /* border: 1px solid rgb(37, 237, 37); */
 }
@@ -417,6 +412,8 @@ html, body {
 
 .cards {
   display: flex;
+  position: relative;
+  overflow: hidden;
   align-items: center;
   justify-content: space-around;
   width: 100%;
@@ -427,11 +424,14 @@ html, body {
   width: 45%;
   height: 90%;
   border-radius: 25px;
+  transition:  0.5s ease-in-out;
+  
   /* border: 1px solid yellow; */
 }
-.cards_image:hover {
-  opacity: 0.9 ;
-  transition: 0.6s ease-out;
+
+.cards > img:hover {
+  opacity: 0.8;
+  transform:scale(1.1);
 }
 .cards_text {
   display: flex;
@@ -440,21 +440,21 @@ html, body {
   justify-content: center;
   align-items: center;
   font-family:'brantford-light';
-  color: white;
+  color: #D5B038;
   font-weight: 100;
   /* border: 1px solid red; */
 }
 /* FINAL Cards no centro da pagina */
 
 /* Rodapé */
-.footer {
+.footer_container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 250px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  background-color: #00000009;
+  background-color: #31282879;
   backdrop-filter: blur(2px);
   border-top: 1px solid #D5B038;
 }
@@ -463,24 +463,34 @@ html, body {
   width: 90%;
   height: 25%;
   justify-content: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .footer_logo > img {
   width: 125px;
-  height: 125px;
+  height: 100px;
+}
+.social_media_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 33px;
+  width: 90%;
+  height: 75%;
+  /* border: 1px solid white; */
 }
 .social_media {
   display:flex;
-  width: 40%;
+  width: 50%;
   height: 75%;
   justify-content: space-evenly;
   align-items: center;
+  list-style: none;
   /* border: 1px solid rgb(0, 255, 119); */
 }
-.social_media > ul > li,.social_media >ul > li > a {
-  list-style: none;
+
+.social_media > li > a {
   text-decoration: none;
-  color: #D5B038;
   font-family:'brantford-light';
-  font-weight: 700;
+  font-weight: 100;
+  color:#e9b928 ;
 }

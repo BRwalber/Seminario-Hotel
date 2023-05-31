@@ -407,7 +407,13 @@ html, body {
   align-items: center;
   width: 90%;
   height: 1000px;
-  /* border: solid 1px red; */
+  background-image: url(/Images/Background/main\ 2.jpg);
+  background-color: #00000085;
+  background-blend-mode: multiply;
+  background-position: left;
+  background-size: 50%;
+  background-repeat: no-repeat;
+ /*  border: solid 1px red; */
 }
 
 .cards {
@@ -430,7 +436,7 @@ html, body {
 }
 
 .cards > img:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   transform:scale(1.1);
 }
 .cards_text {

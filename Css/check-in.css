@@ -65,7 +65,7 @@ html, body {
   /*   menu 1  */
   .container_menu_1{
     display:flex;
-    width: 100%;
+    width: 90%;
     height: 50px;
     justify-content:space-between;
     list-style: none;
@@ -109,17 +109,34 @@ html, body {
 .container_menu_2 {
     display: flex;
     margin-left: 65px;
-    width: 40%;
+    width: 85%;
     height: 75px;
     align-items: center;
+    justify-content: space-between;
     z-index: 2;
     /* border: 1px solid rgb(37, 237, 37); */
   }
   
   .container_menu_2 > img {
-    width: 50%;
-    height: 60%;
+    width: 20%;
+    height: 50%;
     cursor: pointer;
+  }
+
+  .container_menu_2 > a {
+    background:linear-gradient(to left,  #e9b928, #D5B038);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    cursor:pointer;
+    border: solid 1px #e9b928;
+    border-radius: 7px;
+    margin-right: 45px;
+    color: #000000;
+    font-size: 21px;
   }
   /* Fim do menu  */
 

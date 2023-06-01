@@ -50,94 +50,96 @@ html, body {
 
 /*        Menu Superior            */
 .container_header {
-    position: relative;
-    display: flex;
-    /* width:auto; */
-    width:100vw;
-    justify-content: left;
-    align-items: center;
-    height: 160px;
-    flex-wrap:wrap;
-    /* border:solid 1px rgb(199, 199, 135); */
-  }
-  
-  
-  /*   menu 1  */
-  .container_menu_1{
-    display:flex;
-    width: 90%;
-    height: 50px;
-    justify-content:space-between;
-    list-style: none;
-    font-size: 17px;
-    word-spacing: 1px;
-    font-weight: 100;
-    margin-top: 10px;
-    /* border: 1px solid rgb(233, 20, 20); */
-  }
-  
-  
-  /* Menu da Esqueda */
-  .menu_left {
-   display: flex;
-   width: 70%;
-   justify-content: space-evenly;
-   align-items: center;
-   /* border: 1px solid rgb(3, 229, 254); */
-  }
-  
-  /* Menu da Direita */
-  .menu_right {
-    display: flex;
-    width: 25%;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border: 1px solid rgb(219, 22, 177); */
-  }
-  
-  /* Texto do menu  */
-  .container_menu_1 > div >  li > a {
-    text-decoration: none;
-    font-family:'brantford-light';
-    font-weight: 100;
-    color: #e9b928;
-  }
-  
-  /* Inico de menu 2 */
+  display: flex;
+  width:100vw;
+  /* max-width: 90%; */
+  justify-content: center;
+  height: 160px;
+  flex-wrap:wrap;
+  /* border:solid 1px rgb(199, 199, 135); */
+}
 
-/* Menu 2 */
+
+/*   menu  */
+.container_menu_1{
+  display: flex;
+  width: 100%;
+  font-weight: 100;
+  justify-content:space-between;
+  list-style: none;
+  font-size: 17px;
+  word-spacing: 1px;
+  width: 90%;
+  height: 50px;
+  margin: 10px 20px;
+  /* border: 1px solid rgb(233, 20, 20); */
+}
+
+/* Menu 1 da Esqueda */
+.menu_1_left {
+ display: flex;
+ width: 70%;
+ justify-content: space-evenly;
+ align-items: center;
+ /* border: 1px solid rgb(3, 229, 254); */
+}
+
+/* Menu 1 da Direita */
+.menu_1_right {
+  display: flex;
+  width: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 1px solid rgb(219, 22, 177); */
+}
+
+/* Texto do menu 1 */
+.container_menu_1 > div >  li > a{
+  text-decoration: none;
+  font-family:'brantford-light';
+  font-weight: 100;
+  color: #D5B038;
+}
+/* Fim do menu 1 */
+
+
+
+
+/* Inico de menu 2 */
+
 .container_menu_2 {
-    display: flex;
-    margin-left: 65px;
-    width: 85%;
-    height: 75px;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 2;
-    /* border: 1px solid rgb(37, 237, 37); */
-  }
-  
-  .container_menu_2 > img {
-    width: 250px;
-    height: 40px;
-    cursor: pointer;
-  }
+  display: flex;
+  width: 90%;
+  height: 75px;
+  margin: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  /* position:relative; */
+  z-index: 2;
+ /*  border: 1px solid rgb(37, 237, 37); */
+}
 
-  .container_menu_2 > a {
-    background:linear-gradient(to left,  #e9b928, #D5B038);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 30px;
-    text-decoration: none;
-    cursor:pointer;
-    border-radius: 7px;
-    margin-right: 45px;
-    color: #000000;
-    font-size: 21px;
-    font-family:'brantford-light';
-  }
+.container_menu_2 > img {
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.container_menu_2 > a {
+  background:linear-gradient(to left,  #e9b928, #D5B038);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  text-decoration: none;
+  cursor:pointer;
+  border-radius: 7px;
+  margin-right: 45px;
+  color: #000000;
+  font-size: 21px;
+  font-family:'brantford-light';
+}
   /* Fim do menu  */
 
 

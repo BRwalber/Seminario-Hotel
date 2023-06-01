@@ -59,17 +59,8 @@ html, body {
 }
 
 
-/*   Logo + menu  */
+/*   menu  */
 .container_menu_1{
-  
-  width: 90%;
-  height: 50px;
-  margin: 10px 20px;
-  /* border: 1px solid rgb(233, 20, 20); */
-}
-
-/* Apenas o Menu superior */
-.menu_1 {
   display: flex;
   width: 100%;
   font-weight: 100;
@@ -77,8 +68,10 @@ html, body {
   list-style: none;
   font-size: 17px;
   word-spacing: 1px;
-  
-  /* border: 1px solid  #28afe4; */
+  width: 90%;
+  height: 50px;
+  margin: 10px 20px;
+  /* border: 1px solid rgb(233, 20, 20); */
 }
 
 /* Menu 1 da Esqueda */
@@ -99,74 +92,58 @@ html, body {
   /* border: 1px solid rgb(219, 22, 177); */
 }
 
-/* Texto do menu 1 e 2 */
-.menu_1 > div >  li > a, .menu_2 > li > a {
+/* Texto do menu 1 */
+.container_menu_1 > div >  li > a{
   text-decoration: none;
   font-family:'brantford-light';
   font-weight: 100;
   color: #D5B038;
 }
-
-
 /* Fim do menu 1 */
+
+
+
 
 /* Inico de menu 2 */
 
-/* Menu 2 + logo 2 */
 .container_menu_2 {
   display: flex;
   width: 90%;
   height: 75px;
   margin: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
   /* position:relative; */
   z-index: 2;
-  /* border: 1px solid rgb(37, 237, 37); */
+ /*  border: 1px solid rgb(37, 237, 37); */
 }
 
-/* Container do Logo 2 */
-#container_logo_2 {
-  display:flex;
-  align-items: center;
-  width: 40%;
-  height: 100%;
-  /* border:solid 1px rgb(235, 17, 126); */
-} 
-
-/* Apenas o logo 2 */
-#container_logo_2 > img {
-  display: flex;
-  width: 60%;
-  height: 60%;
+.container_menu_2 > img {
+  width: 250px;
+  height: 40px;
   cursor: pointer;
-  /* border: solid 1px rgb(4, 119, 243); */
 }
 
-/* Apenas Menu 2 */
-.menu_2 {
-  display:flex;
-  flex-direction:row-reverse;
-  width: 60%;
-  justify-content:space-between;
-  align-items: center;
-  padding-right: 40px;
-  list-style: none;
-  /* border: 1px solid rgb(72, 36, 235); */
-  
-}
-
-/* Estilo exclusivo (esquerda menu 2) */
-#duas_cores {
+.container_menu_2 > a {
   background:linear-gradient(to left,  #e9b928, #D5B038);
-  border-radius: 7px; 
-  font-size: 21px;
-  color: #000000;
-  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
   text-decoration: none;
-  padding:1px 30px;
-  margin-left: 30px;
-  /* border: 1px solid white; */
-} 
+  cursor:pointer;
+  border-radius: 7px;
+  margin-right: 45px;
+  color: #000000;
+  font-size: 21px;
+  font-family:'brantford-light';
+}
 /* Fim dos menus de navegação */
+
+
+
+
 
 /* Inicio ao container do carrossel */
 
@@ -353,46 +330,38 @@ html, body {
 /* Menu 2 fixo (Sticky) */
 
 .sticky {
-  width: 90%;
-  height: 75px;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  /* z-index: 2; */
   position: fixed;
-  margin: 0;
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 0; 
   padding: 0;
   background-color: rgba(0, 0, 0, 0.616);
   backdrop-filter: blur(15px);
   /* border: 1px solid red; */
-  
-  
 }
-
-.sticky > #container_logo_2 {
-  display:flex;
-  align-items: center;
-  /* padding-left: 5%; */
-  width: 40%;
-  height: 100%;
-  /* z-index: 2; */
-  /* border: 1px solid pink; */
-  
+.sticky > img, .sticky > a {
+  margin-left: 66px;
+  margin-right: 110px;
 }
-.sticky > .menu_2 {
-  display: flex;
-  flex-direction:row-reverse;
-  width: 60%;
-  justify-content:space-between;
-  padding-right: 40px;
-  align-items: center;
-  /* z-index: 2; */
-  /* border: 1px solid rgb(2, 179, 248); */
-  
-  ;
+.sticky > a {
+  transition: 0.5s;
+  background: transparent;
+  border:1px solid #e9b928;
+  color:#e9b928;
 }
-
+.sticky > a:hover{
+  transition: 0.5s ease;
+  box-shadow: 0 0 5px #D5B038,
+              0 0 20px #e9b928,
+              0 0 50px #D5B038;
+}
 /* FINAL Menu 2 fixo (Sticky) */
+
+
+
 
 
 /* Cards no centro da pagina */

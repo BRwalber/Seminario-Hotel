@@ -383,11 +383,12 @@ html, body {
   background-position: left;
   background-size: 50%;
   background-repeat: no-repeat;
- /*  border: solid 1px red; */
+  /* border: solid 1px red; */
 }
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   overflow: hidden;
   align-items: center;

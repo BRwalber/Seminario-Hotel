@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="icon" type="image/x-icon" href="/Images/Logo/Logo.png" />
     <link rel="stylesheet" href="/Css/check-in.css" media="all" />
+    <link rel="stylesheet" href="/Css/index.css" media="all" />
     <title>faça check-in</title>
 
 </head>
@@ -20,11 +21,11 @@
         <div class="container_menu_1">
 
             <div class="menu_1_left">
-                <li> <a href="https://www.google.com"> Sorbre nós </a> </li>
-                <li> <a href="https://www.google.com"> Contato </a> </li>
-                <li> <a href="https://www.google.com"> Galeria </a> </li>
-                <li> <a href="https://www.google.com"> Novidades </a> </li>
-                <li> <a href="https://www.google.com"> Faq </a> </li>
+                <li> <a href=""> Sorbre nós </a> </li>
+                <li> <a href=""> Contato </a> </li>
+                <li> <a href="/Quartos.html"> Galeria </a> </li>
+                <li> <a href=""> Novidades </a> </li>
+                <li> <a href=""> Faq </a> </li>
             </div>
 
             <div class="menu_1_right">
@@ -84,22 +85,28 @@
             <div class="input-field">
                 <label> Quartos disponiveis</label>
                 <select id="quartos" name="Quartos disponiveis">
-                    <option value="01"> 01 </option>
-                    <option value="05"> 05 </option>
-                    <option value="07"> 07 </option>
-                    <option value="11"> 11 </option>
-                    <option value="12"> 12 </option>
-                    <option value="13"> 03 </option>
-                    <option value="16"> 16 </option>
-                    <option value="20"> 20 </option>
-                    <option value="21"> 21 </option>
-                    <option value="22"> 22 </option>
+                    <option value=""  >Clique para escolher</option>
+                    <option value="01"> Quarto 01 </option>
+                    <option value="05"> Quarto 05 </option>
+                    <option value="07"> Quarto 07 </option>
+                    <option value="11"> Quarto 11 </option>
+                    <option value="12"> Quarto 12 </option>
+                    <option value="13"> Quarto 03 </option>
+                    <option value="16"> Quarto 16 </option>
+                    <option value="20"> Quarto 20 </option>
+                    <option value="21"> Quarto 21 </option>
+                    <option value="22"> Quarto 22 </option>
                 </select>
             </div>
 
             <div class="input-field">
-                <label> Preço (diaria)</label>
-                <input type="text" name="Preço (diaria)" placeholder="" required>
+                <label> Forma de pagamento</label>
+                <select id="Tipo_pagamento" name="Tipo_pagamento">
+                    <option value="" > Clique para escolher </option>
+                    <option value="pix"> pix </option>
+                    <option value="cartão"> cartão </option>
+                    <option value="espécie"> espécie </option>
+                </select>
             </div>
 
             <div class="input-field">
@@ -117,9 +124,30 @@
         </div>
 
         <div class="room-list">
-            <p>VEJA NOSSOS QUARTOS</p>
+            <a href="/Quartos.html">VEJA NOSSOS QUARTOS</a>
         </div>
-    </main>
+        <br> <br> <br>
+    </main> 
+    
+    <!-- Rodapé -->
+    <footer class="footer_container">
+        <div class="footer_logo">
+            <img src="/Images/Footer/Footer_logo_2.png" alt="Footer_logo">
+        </div>
+        
+        <div class="social_media_container">
+            <ul class="social_media">
+                <li> <a href=""> Sobre nós </a></li>
+                <li> <a href=""> Contato   </a></li>
+                <li> <a href="/Quartos.html"> Galeria   </a></li>
+                <li> <a href=""> Novidades </a></li>
+                <li> <a href=""> Faq       </a></li>
+            </ul>
+
+        </div>
+
+        
+    </footer>
 
 
 </body>

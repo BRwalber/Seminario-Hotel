@@ -152,13 +152,14 @@ html, body {
     max-width: 950px;
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
     min-height: 80vh;
     border-radius: 10px;
     background-color: #00000009;
     backdrop-filter: blur(15px);
     border: 2px solid #e9b928;
   }
-
+/*  Campo de preenchimento */
  .fields {
     position: relative;
     min-height: 450px;
@@ -171,7 +172,7 @@ html, body {
     gap: 25px; 
     /* border: 1px solid rgb(228, 43, 43); */
   }
-/* container do campo */
+/* campo de preenchimento (separadamente) */
   .input-field {
     position: relative;
     display: flex;
@@ -201,24 +202,28 @@ html, body {
     background-color: #e9b928;
   }
 
-  /* caixa de texto + seleçao de quartos */
+  /* caixa de texto + seleçao de opções */
   .input-field > input, .input-field > select {
     outline: none;
     font-size: 14px;
     font-weight: 100;
     border-radius: 10px;
     border: 1px solid #e9b928;
-    background: #00000077;
+    background-color: black;
+    appearance: none;
     color:#e9b928;
+    transition: 0.5s ease;
     padding: 10px, 15px;
     height: 30px;
-    margin: 10px 0;
+    margin: 10px 0px;
   }
-  .input-field > input:focus,.input-field > input:hover {
-    transition: 0.5s ease;
+  .input-field > input:focus,.input-field > input:hover,
+  .input-field > select:focus,.input-field >select:hover {
+    
     box-shadow: 0 0 5px #e9b928,
                 0 0 20px #e9b928;
   }
+
   /* Botão de cofirmar */
   #input{
     cursor: pointer;
@@ -268,16 +273,16 @@ html, body {
     width: 250px;
     height: 30px;
     border-radius: 10px;
-    font-weight: 900;
-    color:#e9b928;
-    cursor: pointer;
     transition: 0.3s ease;
     background-color: transparent;
     border: solid 1px #e9b928;
   }
-
+  .room-list > a {
+    text-decoration: none;
+    font-weight: 900;
+    color:#e9b928;
+  }
   .room-list:hover {
-    background-color: #e9b928;
     color: black;
     box-shadow: 0 0 5px #e9b928,
                 0 0 20px #e9b928;

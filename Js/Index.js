@@ -5,6 +5,7 @@ var slides = document.querySelectorAll(".mySlides");
 
 showSlides(slideIndex);
 
+  // Botões de controle do carrossel
 dots.forEach(function(dot, index){
 	dot.addEventListener('click', function(event){
     	// remove a marcação dos botões de navegação
@@ -16,7 +17,8 @@ dots.forEach(function(dot, index){
         // adiciona a marcação dos botões de navegação
         slides[index].classList.remove('hidden');  
   		dots[index].classList.add('active');
-        
+
+        // delay
         clearTimeout(sliderTimer);
         sliderTimer = setTimeout(function(){
         	showSlides(index);
@@ -24,11 +26,12 @@ dots.forEach(function(dot, index){
     });
 })
 
+  // Apresentação de imagens 
 function showSlides(newSlideIndex) {
   // optionally override global slideIndex 
   slideIndex = isNaN(newSlideIndex) ? slideIndex: newSlideIndex;
 
-  // hide all slides
+  // Esconder todas as imagens
   slides.forEach(function(slide){
       slide.classList.add('hidden');
   })
@@ -47,13 +50,11 @@ function showSlides(newSlideIndex) {
   slides[slideIndex-1].classList.remove('hidden');  
   dots[slideIndex-1].className += " active";
   
-  // navegação automatica
+  // Delay entre as imagens
   sliderTimer = setTimeout(showSlides, 5000);
 }
 
-
-
-/* Sticky */
+  // Sticky 
 
 window.addEventListener('scroll', function(){
   let header = document.querySelector('.container_menu_2');

@@ -30,7 +30,7 @@ dots.forEach(function(dot, index){
 
 function showSlides(newSlideIndex) {
   // Reinicia a ordem de imagens (slideindex) ao clicar 
-  slideIndex = isNaN(newSlideIndex) ? slideIndex: newSlideIndex;
+  slideIndex = isNaN(newSlideIndex) ? slideIndex : newSlideIndex;
 
   // Esconder todas as imagens deixando apenas a selecionada
   slides.forEach(function(slide){
@@ -52,7 +52,7 @@ function showSlides(newSlideIndex) {
     dot.classList.remove('active');
   })
   
-  // show slide, enable dot
+  // Apresentação de slide e botões
   slides[slideIndex-1].classList.remove('hidden');  
   dots[slideIndex-1].className += " active";
   

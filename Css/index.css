@@ -50,7 +50,7 @@ html {
   background-position: right;
 }
 
-/*        Menu Superior            */
+/* container que envolve todo o menu*/
 .container_header {
   display: flex;
   width:100vw;
@@ -62,7 +62,7 @@ html {
 }
 
 
-/*   menu 1  */
+/*   menu 1 (de cima) */
 .container_menu_1{
   display: flex;
   width: 100%;
@@ -106,10 +106,7 @@ html {
 
 /* Fim do menu 1 */
 
-
-
-
-/* Inico de menu 2 */
+/* menu 2 (de baixo) */
 
 .container_menu_2 {
   display: flex;

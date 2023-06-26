@@ -1,12 +1,12 @@
 var slideIndex = 0;
 var sliderTimer = 0;
-var dots = document.querySelectorAll(".carousel-nav");
+var botoes = document.querySelectorAll(".carousel-nav");
 var slides = document.querySelectorAll(".mySlides");
 
 showSlides(slideIndex);
 
   // Botões de controle do carrossel manual
-dots.forEach(function(dot, index){
+botoes.forEach(function(dot, index){
 	dot.addEventListener('click', function(event){
     	// remove a marcação dos botões de navegação
         document.querySelector('.carousel-nav.active').classList.remove('active')
@@ -16,7 +16,7 @@ dots.forEach(function(dot, index){
         
         // adiciona a marcação dos botões de navegação
         slides[index].classList.remove('hidden');  
-  		dots[index].classList.add('active');
+  		botoes[index].classList.add('active');
 
         // delay adicional ao clicar
         clearTimeout(sliderTimer);
@@ -47,14 +47,14 @@ function showSlides(newSlideIndex) {
 
   // Botões de controle do carrossel automatico
 
-  // Remove classe active dos botões (dots)   
-  dots.forEach(function(dot){
+  // Remove classe active dos botões  
+  botoes.forEach(function(dot){
     dot.classList.remove('active');
   })
   
   // Apresentação de slide e botões
   slides[slideIndex-1].classList.remove('hidden');  
-  dots[slideIndex-1].className += " active";
+  botoes[slideIndex-1].className += " active";
   
   // Delay entre as imagens
   sliderTimer = setTimeout(showSlides, 5000);

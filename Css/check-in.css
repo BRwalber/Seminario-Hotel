@@ -5,6 +5,10 @@ body {
   background-size: 15%,25%;
   background-repeat: repeat-y, no-repeat;
   background-position: right, left;
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 100px; */
+  border: 1px solid red;
 }
 
 
@@ -12,13 +16,14 @@ body {
 /* Inicio da tabela de check-in */
 
   .check-in-container {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     max-width: 900px;
     width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 150px;
     min-height: 80vh;
     border-radius: 10px;
     background-color: #00000009;
@@ -104,7 +109,7 @@ body {
     top: 0px;
     right: 0px;
     width: 450px;
-    height: 498px;
+    height: 100%;
     border-radius: 10px;
     background-color: #0000009f;
     background-image: url(/Images/Background/Check-in.jpg);
@@ -112,7 +117,7 @@ body {
     background-position: center;
     background-blend-mode: multiply;
     filter: blur(5px);
-    /* border: 1px solid rgb(255, 10, 173); */
+   /*  border: 1px solid rgb(255, 10, 173); */
   }
   .banner-text {
     position: absolute;

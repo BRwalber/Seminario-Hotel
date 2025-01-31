@@ -232,6 +232,12 @@ text-shadow:
 }
 
 
+
+
+
+
+
+
 /* Apenas o Carrosel */
 
 .slider {
@@ -248,7 +254,7 @@ text-shadow:
 .slideshow-container {
   width: 90%;
   height: 80%;
-/*   display: flex; */
+/*display: flex; */
   overflow: hidden;
   border-radius: 50px;
   /* border:solid 1px rgb(139, 231, 18); */  
@@ -416,15 +422,15 @@ text-shadow:
 
 
 
-/* Estilos para o rodapé */
+/* rodapé */
 .footer_container {
-  color: #fff; /* Cor do texto */
+  color: #fff;
   padding: 20px;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 }
 
 .footer_logo img {
-  width: 150px; /* Largura do logo */
+  width: 150px; 
   margin-bottom: 20px; /* Espaçamento abaixo do logo */
 }
 
